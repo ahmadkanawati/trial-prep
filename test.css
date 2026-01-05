@@ -1,0 +1,31 @@
+ul {
+    list-style: none;
+    padding: 0px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+/* 2. Target the CHILDREN (The list items) to make them look like tags */
+li {
+    background-color: #007BFF; /* Bootstrap Blue */
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+    
+}
+header {
+    background-color: #333;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    display: flex;
+}
+.page-layout {
+    display: flex;       /* Put children side-by-side */
+    max-width: 1000px;   /* Don't stretch too wide on huge screens */
+    margin: 0 auto;      /* Center the whole page container */
+    padding: 20px;
+    gap: 20px;           /* Space between Main and Sidebar */
+}

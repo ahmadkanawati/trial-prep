@@ -1,0 +1,52 @@
+/* Select everything (*) */
+* {
+    box-sizing: border-box; /* Makes sizing easier */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Get rid of Times New Roman */
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+/* 1. Target the PARENT (The list itself) */
+ul {
+    list-style: none;
+    padding: 0px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-start;
+}
+
+/* 2. Target the CHILDREN (The list items) to make them look like tags */
+li {
+    background-color: #007BFF; /* Bootstrap Blue */
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-weight: bold;
+    
+}
+header {
+    background-color: #333;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    display: flex;
+}
+.page-layout {
+    display: flex;       /* Put children side-by-side */
+    max-width: 1000px;   /* Don't stretch too wide on huge screens */
+    margin: 0 auto;      /* Center the whole page container */
+    padding: 20px;
+    gap: 20px;           /* Space between Main and Sidebar */
+}
+main {
+    flex: 2; /* Take up 2 parts of the space */
+}
+
+aside {
+    flex: 1; /* Take up 1 part of the space */
+}
